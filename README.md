@@ -2,9 +2,23 @@
 
 <img src="demo.gif" width="350"/>
 
+---
+
+A basic console app that uses the <a href="https://pokeapi.co/">PokemonAPI</a> to display data about pokemon. Some of the features includes:
+
+- Fetches the height and weight of a Pokemon by its name
+- Displays all of the type combination's weaknesses and strengths
+
+Technologies used:
+
+- C# and .NET Framework
+- Public API
+
+This project primarily focuses on using public APIs to display and manipulate data. In this case, we used a backend language to create a basic console app that uses an API to display information.
+
 # Assignment Overview:
 
-In this project, you will practice accessing an API. You'll see how an API request is made, and see how data is returned from an API
+In this project, you will practice accessing an API. You'll see how an API request is made from code, and see how data is returned from an API.
 
 ## Objectives
 
@@ -14,11 +28,8 @@ In this project, you will practice accessing an API. You'll see how an API reque
 
 ### Explorer Mode
 
-- [] Choose one of the APIs from
-  [this list](https://github.com/public-apis/public-apis) that does not request
-  "AUTH" (Authorization) since an API that requires authorization is a little
-  more difficult to use when first learning. I have also selected some sample
-  APIs that will be good choices:
+- [x] TOP TIP: Choose an API that has a simple, less nested API. Perhaps one that just returns an array of one-level-deep objects. This will make your task*significantly* easier.
+- [x] Choose one of the APIs from [this list](https://github.com/public-apis/public-apis) that does not request "AUTH" (Authorization) since an API that requires authorization is a little more difficult to use when first learning. I have also selected some sample APIs that will be good choices:
 
 | API                                                      | Documentation                                  |
 | -------------------------------------------------------- | ---------------------------------------------- |
@@ -35,25 +46,23 @@ In this project, you will practice accessing an API. You'll see how an API reque
 | Jokes                                                    | https://github.com/15Dkatz/official_joke_api   |
 
 - [x] After choosing your API **read** the documentation.
-- [x] Use the `Insomnia` tool to make a few queries of the API.
-- [x] Capture screenshots from `Insomnia` showing your request and the response
-      output.
-- [x] Attach those screenshots to your homework assignment.
-- [x] For one response, show a screenshot with the "Header" tab displayed.
-- [x] For this response, find a few headers and describe what they do. NOTE: If the header starts with `X-` it is a _custom_ header and likely is documented by your API. Other headers are more standard and can be google searched.
+- [x] Create a new `sdg-console` application for accessing the API.
+- [x] Create a class to store information that comes back from your API.
+- [x] Write code to query the API and show results.
+- [x] If your API has more than one endpoint (URL) support a few options,
+      perhaps by creating a menu system in your application.
 
 ## Adventure Mode
 
-Read the documentation on this API: https://one-list-api.herokuapp.com/
+Build a command line link shortening tool using this API: https://rel.ink/
 
-Choose your access token from your first and last name. For example `jane-doe`
-or `ron-swanson`.
-
-- [x] Use `Insomnia` to insert 6 items in the list associated with your access token. Attach screenshots of the request and results screen.
-- [x] Use `Insomnia` to mark 2 of these items complete. Attach screenshots of the request and result screen.
-- [x] Use `Insomnia` to delete 1 of the non-complete items. Attach screenshots of the request and result screen.
+Determine for yourself how you would like the tool to work, what the output
+would look like, etc.
 
 ## Epic Mode
 
-- [ ] Investigate using C#'s `HttpClient` class to make requests to any of the APIs you used in Adventure mode.
-- [ ] Create a console app that makes requests and prints the results. Submit the URL to the Github repository of this console app.
+Use the site [Mockaroo](https://mockaroo.com/) to create a mock API. You may
+need an account and then learn how their "Mock API" feature works.
+
+Once you have created your Mock API for whatever schema you wish, implement a
+client application to work with it.
