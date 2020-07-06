@@ -1,4 +1,4 @@
-# Pokemon_Client
+# 04-02 Pokemon_Client
 
 <img src="demo.gif" width="350"/>
 
